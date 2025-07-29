@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalma.Centro de Bienestar</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <img src="img/logo.png" alt="Logotipo Kalma"/>
+        
+
+    </div>
+    <div class="nav-links">
+      <a href="home.html">Inicio</a>
+      <a href="servicios.html">Tratamientos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#nosotras">Nosotras</a>
+    </div>
+  </nav>
+
+  <header>
+    <div id="nombre-con-fondo">Kalma.<br>Centro de Bienestar</div>
+  </header>
+ 
+  <main>
+    <section class="presentacion" id="nosotras">
+      <h2>Sobre Nosotras</h2>
+      <p>Somos un centro de bienestar dedicado a cuidar tu cuerpo, mente y alma.
+        En Kalma creemos en una atención integral, combinando técnicas profesionales con un enfoque humano y cercano. Nuestro equipo está formado por especialistas comprometidas con tu salud, que te acompañarán en cada paso hacia el equilibrio interior que mereces.
+        Te ofrecemos un espacio cálido, relajante y armonioso, donde cada detalle está pensado para que desconectes del estrés diario y te reconectes contigo.
+       <br>🌿 Tu bienestar es nuestra vocación.<br>
+       Ven a conocernos y descubre una experiencia de bienestar diseñada especialmente para ti.</p>
+    </section>
+
+    <section class="bloque" id="servicios">
+      <h2>Nuestros clientes lo adoran</h2>
+      <div class="galeria">
+        <img src="img/deseo/ttmo1.png" alt="Peeling triácidos" onclick="ampliarImagen(this)">
+        <img src="img/deseo/ttmo2.png" alt="Dermapen" onclick="ampliarImagen(this)">
+        <img src="img/deseo/ttmo3.png" alt="Mirada perfecta" onclick="ampliarImagen(this)">
+      </div>
+    </section>
+    
+    <div id="modal" class="modal" onclick="cerrarModal()">
+      <img id="imagenAmpliada" src="" alt="Imagen ampliada" />
+    </div>
+  </main>
+   
+
+  
+
+  <section class="promo">
+    <h3>Promociones</h3>
+    <div class="promo-img">
+      <img src="img/promos/promo.png" alt="50% en segundo lifting de pestañas" />
+    </div>
+  </section>
+  <footer class="footer-kalma-fijo">
+  <div class="enlaces-footer">
+    
+    <div class="footer-enlaces">
+      <a href="https://api.whatsapp.com/send/?phone=34611953269&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i> WhatsApp<hr>
+      </a>
+      <a href="https://www.instagram.com/kalma.centrobienestar" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i> Instagram<hr>
+      </a>
+      <a href="https://maps.app.goo.gl/2k6Zw5EbMHvNMANc9" target="_blank" aria-label="Google Maps">
+        <i class="fas fa-map-marker-alt"></i> Calle Limoneros 12A, Calpe
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
