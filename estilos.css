@@ -1,13 +1,16 @@
+/*Estilos para web KALMA*/
+/*Fuentes personalizadas*/
 @font-face {
   font-family: 'Higuen-Regular-Serif';
   src: url('./fuente/higuen-regular.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'TheSeasons-Regular';
+  font-family: 'theseasons-regular', serif;
   src: url('./fuente/the-seasons-regular.otf') format('opentype');
 }
 
+/*Reglas generales*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,30 +18,32 @@
 }
 
 body {
-  font-family: 'TheSeasons-Regular', serif;
+  font-family: 'theseasons-regular', serif;
   background-color: #f7f3eb;
   color: #333;
   line-height: 1.6;
+  transition: backgroud-color 0.3s ease; /*Transición para cambio de fondo*/
 }
 
-/* NAVIGATION */
+/* NAVIGACIÓN */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #2b4d27;
+  background-color: #2b4d27; /*Verde oscuro*/
   padding: 12px 25px;
-  position: sticky;
+  position: sticky; /*fijo al hacer scroll*/
   top: 0;
-  z-index: 1000;
-  border-bottom: 3px solid #d6ad60;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000; /*se superpone a otros elementos*/
+  border-bottom: 3px solid #d6ad60; /* borde dorado*/
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /*sombra sutil*/
 }
 
+/*LOGO NAVEGACIÓN*/
 .nav-logo {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 50%; /*círculo*/
   overflow: hidden;
   border: 3px solid #d6ad60;
   background-color: white;
@@ -47,12 +52,14 @@ nav {
   justify-content: center;
 }
 
+/*IMG LOGO*/
 .nav-logo img {
   height: 100%;
   width: auto;
   object-fit: contain;
 }
 
+/*ENLACES DE NAV*/
 .nav-links {
   display: flex;
   gap: 30px;
@@ -80,6 +87,7 @@ header {
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
 }
 
+/*Título con fondo de imagen*/
 #nombre-con-fondo {
   font-size: 2.8rem;
   font-weight: 700;
@@ -100,7 +108,7 @@ header {
 }
 
 
-
+/*PRESENTACIÓN*/
 .presentacion h2 {
   font-size: 2.2rem;
   color: #2b4d27;
@@ -109,7 +117,8 @@ header {
 }
 
 /* GALERÍA */
-.bloque, .presentacion {
+.bloque,
+.presentacion {
   background-color: #ffffff;
   max-width: 1000px;
   margin: 50px auto;
@@ -126,6 +135,7 @@ header {
   font-family: 'Higuen-Regular-Serif', serif;
 }
 
+/*Diseño de galería en grid*/
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -133,6 +143,7 @@ header {
   justify-items: center;
 }
 
+/*Img de galería*/
 .galeria img {
   width: 100%;
   max-width: 220px;
@@ -144,12 +155,13 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*Hover en igmg de galería*/
 .galeria img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* MODAL */
+/* MODAL PARA IMG*/
 .modal {
   display: none;
   position: fixed;
@@ -269,6 +281,8 @@ header {
     padding: 15px;
   }
 }
+
+/*SERVICIOS*/
 /* TÍTULOS */
 .tratamientos h1 {
   font-family: 'theseasons-regular', serif;
@@ -323,16 +337,20 @@ header {
 }
 
 .ttmto > div:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.ttmto h2 {
+/*título en tarjeta*/
+.ttmto h3 {
   font-family: 'theseasons-regular', serif;
-  font-size: 1.4em;
+  font-weight: 700;
+  font-size: 1.8em;
   color: #4a5a3c;
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
 
+/*texto en tarjeta*/
 .ttmto p {
   font-family: 'higuen-regular-serif', serif;
   font-size: 0.95em;
@@ -367,6 +385,8 @@ header {
   flex-shrink: 0;
   display: block;
 }
+
+/*Depilación*/
 #depilacion{
   display: flex; /*Elementos hijos en fila*/
   justify-content: space-between;/*Espacio entre la lista y la imagen*/
@@ -382,7 +402,7 @@ header {
 }
 
 
-
+/*Contenido dentro de depilación*/
 .contenido-depi {
   display: flex;
   justify-content: space-between;
@@ -390,6 +410,7 @@ header {
   gap: 30px;
 }
 
+/*Lista de servicios con precio*/
 .lista-depi li{
   display: flex;
   justify-content:  space-between; /*Para espacio entre el tipo y el precio*/
@@ -539,7 +560,7 @@ header {
 
 
 
-/* RESPONSIVE */
+/* RESPONSIVE Para tratamientos */
 @media (max-width: 768px) {
   .ttmto {
     flex-direction: column;

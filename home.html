@@ -1,34 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
+<!--Página principal web KALMA-->
+
+<!--Documento HTML5-->
+<!DOCTYPE html> 
+<html lang="es"> <!--Inicio html y definición del lenguaje-->
+<!--Definición metadatos-->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kalma.Centro de Bienestar</title>
-  <link rel="stylesheet" href="estilos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8" /> <!--Soporta acentos y caracteres especiales en es-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--Responsivo para móviles y tablets-->
+  <title>Kalma.Centro de Bienestar</title> <!--Título pestaña-->
+  <link rel="stylesheet" href="estilos.css" /> <!--Enlace estilo-->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito&display=swap" rel="stylesheet" /> <!--Fuentes-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" /> <!--Iconos-->
 </head>
+
+
 <body>
+  <!--Barra de navegación-->
   <nav>
+    <!--Logotipo del centro-->
     <div class="nav-logo">
       <img src="img/logo.png" alt="Logotipo Kalma"/>
-        
-
     </div>
+    <!--Enlaces de navegacion-->
     <div class="nav-links">
       <a href="home.html">Inicio</a>
-      <a href="servicios.html">Tratamientos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="servicios.html">Tratamientos</a> <!--Otras páginas-->
+      <a href="#contacto">Contacto</a> <!--Secciones de home-->
       <a href="#nosotras">Nosotras</a>
     </div>
   </nav>
-
+  
+  <!--Cabecera-->
   <header>
     <div id="nombre-con-fondo">Kalma.<br>Centro de Bienestar</div>
   </header>
  
+  <!--Sección principal de presentación del centro-->
   <main>
-    <section class="presentacion" id="nosotras">
+    <section class="presentacion" id="nosotras"> <!--id para enlace del nav-->
       <h2>Sobre Nosotras</h2>
       <p>Somos un centro de bienestar dedicado a cuidar tu cuerpo, mente y alma.
         En Kalma creemos en una atención integral, combinando técnicas profesionales con un enfoque humano y cercano. Nuestro equipo está formado por especialistas comprometidas con tu salud, que te acompañarán en cada paso hacia el equilibrio interior que mereces.
@@ -36,34 +45,37 @@
        <br>🌿 Tu bienestar es nuestra vocación.<br>
        Ven a conocernos y descubre una experiencia de bienestar diseñada especialmente para ti.</p>
     </section>
-
+    
+    <!-- sección con ejemplos de servicios (revisar)-->
     <section class="bloque" id="servicios">
       <h2>Nuestros clientes lo adoran</h2>
+      <!--Galería de img-->
       <div class="galeria">
-        <img src="img/deseo/ttmo1.png" alt="Peeling triácidos" onclick="ampliarImagen(this)">
+        <img src="img/deseo/ttmo1.png" alt="Peeling triácidos" onclick="ampliarImagen(this)"> <!--Call función para ampliar img-->
         <img src="img/deseo/ttmo2.png" alt="Dermapen" onclick="ampliarImagen(this)">
         <img src="img/deseo/ttmo3.png" alt="Mirada perfecta" onclick="ampliarImagen(this)">
       </div>
     </section>
     
+    <!--Modal oculto (click img)-->
     <div id="modal" class="modal" onclick="cerrarModal()">
       <img id="imagenAmpliada" src="" alt="Imagen ampliada" />
     </div>
   </main>
    
-
-  
-
+  <!--Promociones centro (revisar)-->
   <section class="promo">
     <h3>Promociones</h3>
     <div class="promo-img">
       <img src="img/promos/promo.png" alt="50% en segundo lifting de pestañas" />
     </div>
   </section>
+ 
+  <!--Pie de página-->
   <footer class="footer-kalma-fijo">
-  <div class="enlaces-footer">
+  <div class="enlaces-footer" id="contacto"> <!--Enlace contacto nav-->
     
-    <div class="footer-enlaces">
+    <div class="footer-enlaces"> <!--Grupo enlaces rrss-->
       <a href="https://api.whatsapp.com/send/?phone=34611953269&text&type=phone_number&app_absent=0" target="_blank" aria-label="WhatsApp">
         <i class="fab fa-whatsapp"></i> WhatsApp<hr>
       </a>
@@ -71,7 +83,7 @@
         <i class="fab fa-instagram"></i> Instagram<hr>
       </a>
       <a href="https://maps.app.goo.gl/2k6Zw5EbMHvNMANc9" target="_blank" aria-label="Google Maps">
-        <i class="fas fa-map-marker-alt"></i> Calle Limoneros 12A, Calpe
+        <i class="fas fa-map-marker-alt"></i> Calle Limoneros 12A, Calpe<hr>
       </a>
     </div>
   </div>
